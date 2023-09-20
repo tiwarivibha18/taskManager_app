@@ -4,11 +4,14 @@
 	"main": "server.js",
 	"license": "MIT",
 	"dependencies": {
-		"concurrently": "^8.2.0"
+		"concurrently": "^8.2.1",
+		"nodemon": "^3.0.1"
 	},
 	"scripts": {
 		"client": "yarn --cwd client dev",
-		"server": " nodemon  server/server.js",
+		"server": "nodemon  server/server.js",
 		"dev": "concurrently \"yarn server\" \"yarn client\""
-	}
+	},
+
+	"author": "tiwarivibha18 <126669633+tiwarivibha18@users.noreply.github.com>"
 }

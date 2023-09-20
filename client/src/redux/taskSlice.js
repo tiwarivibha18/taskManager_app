@@ -90,7 +90,7 @@ export const getAllTasks = (token, id) => async (dispatch) => {
 			dispatch(getAllTaskSuccess(response.data));
 		}
 	} catch (error) {
-		if (error.response.status === 400) {
+		if (error.response.status === 500) {
 			dispatch(getAllTaskFailure());
 		}
 	}
